@@ -5,7 +5,7 @@ Package with JSON RPC interface in typescript.
 ## Installation
 
 ```bash
-npm install @budarin/json-rpc-interface
+yarn add @budarin/json-rpc-interface
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ if (divided.error) {
 console.log(divided.result);
 ```
 
-## Options
+## Type definition
 
 ```ts
 type JsonRpcError<U> = {
