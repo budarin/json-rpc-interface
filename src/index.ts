@@ -15,10 +15,8 @@ export type DeepReadonlyObject<T> = {
     readonly [P in keyof T]: DeepReadonly<T[P]>;
 };
 
-type JsonRpcError<U> = {
-    message: string;
+type JsonRpcError<U = any> = Error & {
     data?: U;
-    stack?: string;
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
